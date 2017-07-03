@@ -58,6 +58,7 @@ public int blobCount()
     {
       //if it is part of blob that was not yet counted
      if (grid[i][j] && !markedGrid[i][j]){
+	// used DFS as a basis
       ArrayList<Integer> row_values = new ArrayList<Integer>(rows*cols);
       ArrayList<Integer> column_values = new ArrayList<Integer>(rows*cols);
       row_values.add(i);
